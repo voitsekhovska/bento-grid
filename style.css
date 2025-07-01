@@ -1,0 +1,192 @@
+/* GENERAL STYLES */
+
+:root {
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1;
+  background-color: rgb(238, 237, 237);
+  color: var(--black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-preset-1 {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-align: center;
+  max-width: 80%;
+}
+.text-preset-2 {
+  font-weight: 500;
+  font-size: 2.3rem;
+  letter-spacing: -1.5px;
+  text-align: left;
+}
+.text-preset-3 {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.text-preset-4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+img {
+  width: 250px;
+}
+
+.italic {
+  font-style: italic;
+}
+.accent {
+  color: var(--yellow-500);
+}
+
+/* GRID TEMPLATES */
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  max-width: 1250px;
+  margin: 50px;
+  width: 100%;
+}
+
+.section-grid-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.section-grid-square {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "item1 item1 item2"
+    "item3 item4 item2"
+    "item5 item6 item6";
+  gap: 30px;
+}
+
+/* GENERAL GRID CHILDREN */
+
+.grid-item {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  overflow: hidden;
+}
+
+/* GRID COLUMN STYLES */
+
+.item-create {
+  background-color: var(--yellow-100);
+  justify-content: center;
+  gap: 20px;
+}
+.item-create .text-preset-2 {
+  width: 70%;
+}
+.item-create span {
+  color: var(--purple-500);
+}
+.item-create img {
+  transform: scale(0.8);
+}
+
+.item-write {
+  background-color: var(--yellow-500);
+  justify-content: space-between;
+}
+.item-write .text-preset-2 {
+  width: 70%;
+}
+
+/* GRID SQUARE STYLES */
+
+.item-social {
+  grid-area: item1;
+  background-color: var(--purple-500);
+  color: var(--white);
+  align-items: center;
+}
+.item-social img {
+  transform: scale(0.9);
+  padding: 15px 0 8px 0;
+}
+
+.item-schedule {
+  grid-area: item2;
+  background-color: var(--purple-100);
+  gap: 20px;
+}
+.item-schedule img {
+  width: 180%;
+}
+
+.item-manage {
+  grid-area: item3;
+  background-color: var(--white);
+  justify-content: space-evenly;
+}
+.item-manage img {
+  width: 150%;
+}
+
+.item-maintain {
+  grid-area: item4;
+  background-color: var(--yellow-500);
+  position: relative;
+  align-items: center;
+}
+.item-maintain img {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(40%);
+}
+
+.item-percent {
+  grid-area: item5;
+  background-color: var(--white);
+  justify-content: space-between;
+}
+.item-percent .text-preset-2 {
+  font-size: 4rem;
+}
+.item-percent img {
+  transform: scale(0.8);
+}
+
+.item-grow {
+  grid-area: item6;
+  background-color: var(--purple-500);
+  flex-direction: row;
+  color: var(--white);
+  align-items: center;
+}
+
+.attribution a {
+  color: darkslateblue;
+  text-align: center;
+}
