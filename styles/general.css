@@ -9,6 +9,10 @@
   --black: hsl(0, 0%, 7%);
 }
 
+html {
+  font-size: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +72,6 @@ img {
   gap: 30px;
   max-width: 1250px;
   margin: 50px;
-  width: 100%;
 }
 
 .section-grid-col {
@@ -188,5 +191,12 @@ img {
 
 .attribution a {
   color: darkslateblue;
-  text-align: center;
+}
+.attribution a:hover {
+  text-decoration: underline;
+  color: var(--yellow-500);
+}
+
+footer {
+  margin-bottom: 30px;
 }
