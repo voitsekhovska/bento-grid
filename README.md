@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-page-using-css-grid](https://www.frontendmentor.io/solutions/responsive-page-using-css-grid-Q3xjMzzNcu)
 - Live Site URL: [https://voitsekhovska.github.io/bento-grid/](https://voitsekhovska.github.io/bento-grid/)
 ## My process
 
