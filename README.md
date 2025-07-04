@@ -27,7 +27,6 @@ Users should be able to:
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [https://voitsekhovska.github.io/bento-grid/](https://voitsekhovska.github.io/bento-grid/)
-
 ## My process
 
 ### Built with
